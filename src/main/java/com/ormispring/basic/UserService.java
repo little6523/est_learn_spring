@@ -1,6 +1,10 @@
 package com.ormispring.basic;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class UserService {
+
     private UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
@@ -9,5 +13,9 @@ public class UserService {
 
     public void createUser(User user) {
         userRepository.save(user);
+    }
+
+    public void deleteUser(User user) {
+        userRepository.delete(user);
     }
 }
