@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BasicApplication {
 
   public static void main(String[] args) {
-    UserRepositoryInterface userRepository = new UserRepository();
-
     SpringApplication.run(BasicApplication.class, args);
   }
 }

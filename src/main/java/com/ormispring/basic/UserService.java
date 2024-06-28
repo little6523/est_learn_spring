@@ -1,13 +1,15 @@
 package com.ormispring.basic;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
 
-    private UserRepository userRepository;
+    private UserRepositoryInterface userRepository;
 
-    public UserService(UserRepository userRepository) {
+    @Autowired
+    public UserService(UserRepositoryInterface userRepository) {
         this.userRepository = userRepository;
     }
 
