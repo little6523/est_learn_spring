@@ -1,4 +1,4 @@
-package com.ormispring.basic;
+package com.ormispring.basic.spring_0628;
 
 import org.springframework.stereotype.Repository;
 
