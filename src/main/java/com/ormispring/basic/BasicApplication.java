@@ -19,11 +19,11 @@ public class BasicApplication {
     //    userController.setUserAge(31);
     //    userController.updateView();
 
-    Quiz quiz = new Quiz("오늘은 무슨 요일일까요?", "월요일");
-    QuizView quizView = new QuizView();
-    QuizController quizController = new QuizController(quiz, quizView);
-    quizController.startQuiz();
+    //    Quiz quiz = new Quiz("오늘은 무슨 요일일까요?", "월요일");
+    //    QuizView quizView = new QuizView();
+    //    QuizController quizController = new QuizController(quiz, quizView);
+    //    quizController.startQuiz();
 
-    //    SpringApplication.run(BasicApplication.class, args);
+    SpringApplication.run(BasicApplication.class, args);
   }
 }
