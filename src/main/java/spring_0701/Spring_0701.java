@@ -23,6 +23,6 @@ public class Spring_0701 {
     //    QuizController quizController = new QuizController(quiz, quizView);
     //    quizController.startQuiz();
 
-    SpringApplication.run(com.ormispring.basic.BasicApplication.class, args);
+//    SpringApplication.run(com.ormispring.basic.BasicApplication.class, args);
   }
 }
