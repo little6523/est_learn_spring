@@ -1,4 +1,4 @@
-package com.ormispring.basic;
+package spring_0701;
 
 import org.springframework.stereotype.Repository;
 
@@ -9,7 +9,6 @@ import java.util.Map;
 public class UserRepository {
 
     Map<String, User> users = new HashMap<>();
-
 
     public User getUser() {
         users.put("max", new User("max@gmail.com", "Max", 20));

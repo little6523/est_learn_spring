@@ -1,4 +1,4 @@
-package com.ormispring.basic;
+package spring_0701;
 
 import org.springframework.stereotype.Component;
 

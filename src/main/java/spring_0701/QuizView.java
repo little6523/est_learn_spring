@@ -1,4 +1,4 @@
-package com.ormispring.basic;
+package spring_0701;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class QuizView {
 
   public String getUserAnswer() {
     Scanner sc = new Scanner(System.in);
-      return sc.nextLine();
+    return sc.nextLine();
   }
 
   public void displayResult(boolean isCorrect) {

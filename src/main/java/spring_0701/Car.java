@@ -1,4 +1,4 @@
-package com.ormispring.basic;
+package spring_0701;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

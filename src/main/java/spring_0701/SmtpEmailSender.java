@@ -1,4 +1,4 @@
-package com.ormispring.basic;
+package spring_0701;
 
 public class SmtpEmailSender implements EmailSender {
 
