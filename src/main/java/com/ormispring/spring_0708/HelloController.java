@@ -1,4 +1,4 @@
-package com.ormispring.basic;
+package com.ormispring.spring_0708;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

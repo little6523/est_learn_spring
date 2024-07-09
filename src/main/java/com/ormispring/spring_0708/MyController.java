@@ -1,4 +1,4 @@
-package com.ormispring.basic;
+package com.ormispring.spring_0708;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

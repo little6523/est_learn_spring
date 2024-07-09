@@ -1,9 +1,9 @@
-package com.ormispring.service;
+package com.ormispring.spring_0708.service;
 
-import com.ormispring.util.Helper;
-import com.ormispring.util.Test1;
-import com.ormispring.util.Test2;
-import com.ormispring.util.Test3;
+import com.ormispring.spring_0708.util.Helper;
+import com.ormispring.spring_0708.util.Test1;
+import com.ormispring.spring_0708.util.Test2;
+import com.ormispring.spring_0708.util.Test3;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

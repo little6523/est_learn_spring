@@ -1,0 +1,6 @@
+package com.ormispring.spring_0708;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class MyRepository {}

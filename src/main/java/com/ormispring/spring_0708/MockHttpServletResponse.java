@@ -1,4 +1,4 @@
-package com.ormispring.basic;
+package com.ormispring.spring_0708;
 
 import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.http.Cookie;
