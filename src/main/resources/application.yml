@@ -1,7 +1,10 @@
-spring:
-  application:
-    name: spring-boot
+#server:
+#  port: 8080
+#
+#spring:
+#  application:
+#    name: est-service
 
-kakao:
-  api:
-    key: 1234567890
+spring:
+  profiles:
+    active: dev
