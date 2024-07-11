@@ -3,14 +3,14 @@ package com.ormispring.day0709;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class ThymeleafController {
 
-    @GetMapping("/index")
-    public String index(Model model) {
-        model.addAttribute("name", "굿굿베리굿");
-        model.addAttribute("message", "안녕하세요. 오르미 5기입니다.");
-        return "index";
-    }
+  @GetMapping("/index")
+  public String index(@RequestParam("name") String name, Model model) {
+    model.addAttribute("name1", name);
+    return "index";
+  }
 }
