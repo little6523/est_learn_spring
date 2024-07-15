@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.TimeZone;
 
-@SpringBootApplication(scanBasePackages = "com.ormispring.day0709")
+@SpringBootApplication(scanBasePackages = "com.ormispring.day0715")
 public class BasicApplication {
 
     @Value("${server.port}")
@@ -26,6 +26,7 @@ public class BasicApplication {
         System.out.println("포트번호: " + port);
         System.out.println("애플리케이션 이름: " + appName);
     }
+
     public static void main(String[] args) {
         SpringApplication.run(BasicApplication.class, args);
     }
