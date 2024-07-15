@@ -12,11 +12,14 @@ public class ThymeleafController {
 
   @GetMapping("/index")
   public String index(@RequestParam("name") String name, Model model) {
-    User max = new User("max", "max@gmail.com", true);
+    User max = new User("max", "max@gmail.com", true, false);
 
+    int[] iterData = {1, 2, 3, 4, 5};
 
     model.addAttribute("user", max);
+    model.addAttribute("iterData", iterData);
 
     return "index";
   }
+
 }
