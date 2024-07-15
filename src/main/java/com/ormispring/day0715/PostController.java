@@ -2,10 +2,7 @@ package com.ormispring.day0715;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -36,5 +33,16 @@ public class PostController {
         post.setCreateAt(LocalDateTime.now());
         posts.add(post);
         return "redirect:/posts";
+    }
+
+    @GetMapping("/{id}")
+    public String detail(@PathVariable("id") Long id, Model model) {
+        Post post = posts.stream()
+                .filter(p -> p.getId() == id)
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException());
+
+        model.addAttribute("post", post);
+        return "post/detail";
     }
 }
