@@ -19,4 +19,22 @@ public class UserController {
         // 사용자 생성 로직
         return null;
     }
+
+    @GetMapping("/{id}")
+    public User getUserByID(@PathVariable("id") Long id) {
+        // 특정 사용자 찾기
+        return null;
+    }
+
+    @PutMapping("/{id}")
+    public User updateUser(@PathVariable("id") Long id, @RequestBody User updateUser) {
+        // 업데이트 로직
+        return null;
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteUser(@PathVariable("id") Long id) {
+        // 사용자 삭제 메소드
+
+    }
 }
