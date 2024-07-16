@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.TimeZone;
 
-@SpringBootApplication(scanBasePackages = "com.ormispring.day0715")
+@SpringBootApplication(scanBasePackages = "com.ormispring.day0716_restapi")
 public class BasicApplication {
 
     @Value("${server.port}")
