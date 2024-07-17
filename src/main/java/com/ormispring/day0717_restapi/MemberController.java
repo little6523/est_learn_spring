@@ -26,13 +26,15 @@ public class MemberController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Member> getMemberById(@PathVariable("id") Long id) {
+    public ResponseEntity<MemberDTO> getMemberById(@PathVariable("id") Long id) {
         Member member1 = members.stream()
                 .filter(member -> member.getId() == id)
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("뭐시여 이건."));
 
-        return ResponseEntity.status(404).body(member1); // 상태코드 바꾸는 방법
+        MemberDTO memberDTO = new MemberDTO(member1.getEmail());
+
+        return ResponseEntity.status(404).body(memberDTO); // 상태코드 바꾸는 방법
     }
 
     @PutMapping("/{id}")
