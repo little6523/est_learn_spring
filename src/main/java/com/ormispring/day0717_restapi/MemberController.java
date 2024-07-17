@@ -1,5 +1,6 @@
 package com.ormispring.day0717_restapi;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -25,11 +26,13 @@ public class MemberController {
     }
 
     @GetMapping("/{id}")
-    public Member getMemberById(@PathVariable("id") Long id) {
-        return members.stream()
+    public ResponseEntity<Member> getMemberById(@PathVariable("id") Long id) {
+        Member member1 = members.stream()
                 .filter(member -> member.getId() == id)
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("뭐시여 이건."));
+
+        return ResponseEntity.status(404).body(member1); // 상태코드 바꾸는 방법
     }
 
     @PutMapping("/{id}")
@@ -43,5 +46,10 @@ public class MemberController {
         member.setEmail(updateMember.getEmail());
 
         return member;
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteMember(@PathVariable("id") Long id) {
+        members.removeIf(member -> member.getId() == id);
     }
 }
